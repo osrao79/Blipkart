@@ -1,0 +1,18 @@
+.navbar {
+  background-color: whitesmoke;
+}
+
+.navbar-brand {
+  color: darkgrey;
+}
+.badge {
+  font-size: 10px;
+  background: rgb(172, 121, 155);
+  border-radius: 50%;
+  padding: 3px;
+  position: relative;
+  left: -8px;
+  top: -10px;
+
+  color: whitesmoke;
+}

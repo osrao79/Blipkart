@@ -1,0 +1,29 @@
+#subtotal {
+  margin: 10px;
+  padding: 10px 20px;
+  color: #6c7c90;
+  line-height: 60px;
+
+  border-top: 1px solid rgba(108, 124, 144, 0.15);
+  border-bottom: 1px solid rgba(108, 124, 144, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout {
+  display: flex;
+  justify-content: center;
+}
+.btnCheck {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  background: #ff3f6c;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

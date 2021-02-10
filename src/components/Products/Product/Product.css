@@ -1,0 +1,41 @@
+.cart-btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  background: #ff3f6c;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px;
+}
+#item-price {
+  float: right;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  height: 22rem;
+  margin: 1rem;
+  width: 20rem;
+  justify-content: center;
+}
+.card-img-top {
+  object-fit: scale-down;
+  align-self: center;
+  width: 10rem;
+  height: 10rem;
+}
+.card-text {
+  min-height: 70px;
+  font-size: small;
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
