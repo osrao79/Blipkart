@@ -26,7 +26,6 @@ export default function App() {
   const addToCart = async (productId, quantity) => {
     const item = await commerce.cart.add(productId, quantity);
     setCart(item);
-    fetchCart();
   };
 
   //fetching Item from Cart
@@ -38,19 +37,17 @@ export default function App() {
   const removeCartItem = async (productId) => {
     const cart = await commerce.cart.remove(productId);
     setCart(cart);
-    fetchCart();
   };
 
   //updating quantity in cart
   const updateQuantity = async (lineItemId, quantity) => {
     const cart = await commerce.cart.update(lineItemId, { quantity });
     setCart(cart);
-    fetchCart();
   };
   useEffect(() => {
     fetchProducts();
     fetchCart();
-  }, []);
+  }, [cart]);
 
   return (
     <Router>

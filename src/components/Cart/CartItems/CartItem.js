@@ -10,7 +10,6 @@ function CartItem({ item, removeCartItem, updateQuantity }) {
           <img src={item.media.source} alt={item.name} className="cartImage" />
         </div>
         <div className="col-sm">
-          {" "}
           <h6 className="card-title" id="cardTitle">
             {item.name}
           </h6>
@@ -18,7 +17,7 @@ function CartItem({ item, removeCartItem, updateQuantity }) {
         <div className="col-sm" id="btnCol">
           <button
             className="btn btn-s"
-            className="quantityBtn"
+            id="quantityBtn1"
             style={{ background: "#ff3f6c" }}
             onClick={() => {
               handleUpdateQty(item.id, item.quantity + 1);
@@ -28,9 +27,12 @@ function CartItem({ item, removeCartItem, updateQuantity }) {
           </button>
           <h5> {item.quantity}</h5>
           <button
-            className="btn  btn-s"
-            className="quantityBtn"
+            className="btn btn-s"
+            id="quantityBtn2"
             style={{ background: "#ff3f6c" }}
+            onClick={() => {
+              handleUpdateQty(item.id, item.quantity - 1);
+            }}
           >
             -
           </button>

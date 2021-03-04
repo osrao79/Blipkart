@@ -1,5 +1,3 @@
-#container {
-}
 .cartImage {
   float: left;
   display: block;
@@ -42,8 +40,8 @@
   align-items: center;
 }
 
-.quantityBtn {
+#quantityBtn1,
+#quantityBtn2 {
   margin: 4%;
-
   color: #fff;
 }
